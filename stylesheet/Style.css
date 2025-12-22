@@ -1,67 +1,98 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  body {
   padding: 0px;
+  display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #FFFFFF;
   text-align: center;
-  background: linear-gradient(to bottom, #000000, #000000, #4A04B7F2, #1E0000, #0016FFF2 );
-  
+  background: linear-gradient(to bottom, #1167adc7, #000000, #14136dd3, #1E0000, #0016FFF2 );
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-
-h1{
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 5px 0 20px #5639DD;
-  margin-bottom: 2px;
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255,255,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
 }
-.intro{
-  padding: 5px;
-  margin-bottom: 15px;
+.wrapper h2 {
+  font-size: 36px;
+  text-align: center;
 }
-
-
-h4 {
-  
-  font-weight: bold;
-  text-shadow: 0 0 10px #0369FF;
-  margin-top: 20px; 
-  cursor: pointer; 
+.wrapper .input-field {
+    width: 100%;
+    height: 30%;
+    margin: 30px 0;
 }
-
-h4:hover {
-  text-decoration: underline; 
+.input-field input {
+    width: 90%;
+    height: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255,255,0.2);
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px  45px 20px 20px;
 }
-.facts{
-  cursor: pointer;
-  padding: 14px 18px;
-  margin: 20px ;
-  border-radius: 12px;
-  
+.input-field i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
 }
-
-
-.mini-quiz{
-
-  margin-top: 25px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(66, 169, 255, 1); 
-  padding: 30px 0;
+.input-box input::placeholder {
+    color: #fff;
 }
-  .mini-quiz label{
-    padding: 10px;
-  }
-input[type="radio"]:checked + .correct{
-  background-color: #2CDD01;
-  border: 2px solid #0DFFF6;
-  border-radius: 12px;
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #faf9f9;
+    font-weight: 600;
 }
-input[type="radio"]:checked + .wrong {
-  background-color: #E7006C;
-  border: 2px solid #8900E7;
-  border-radius: 12px;
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
 }
-
-.outro{
-  margin-top: 20px;
-  padding: 10px;
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
 }
-
+.remember-forgot a {
+    color: blue;
+    text-decoration: underline;
+}
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
